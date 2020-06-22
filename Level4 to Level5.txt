@@ -1,0 +1,10 @@
+Use the steps from Level1 to Level2 stages until you establish a connection with SSH terminal of this challenge
+Step 1) ls
+Another directory
+Step 2) cd inhere
+Step 3) ls 
+Here is find a total of 10 files which are starting with '-f'. Linux does not directly treat this as a file and hence we have to use special methods to bypass this problem
+Step 4) file ./-f*
+This above command will recognize ass the files starting with -f as a normal executable files and give the output about what type of file it is. Our goal here was to find
+human readable file (ASCII in this case) which comes out to be file07
+Step 5) cat ./-file07
