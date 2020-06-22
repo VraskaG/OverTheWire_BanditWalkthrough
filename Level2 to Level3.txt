@@ -1,0 +1,4 @@
+Use the steps from previous stages until you establish a connection with SSH terminal of this challenge
+Step 1) ls
+We find that this time there a file which has spaces in it's name
+Step 2) cat 'spaces in this filename' 

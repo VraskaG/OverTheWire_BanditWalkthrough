@@ -1,0 +1,9 @@
+This level we connect to another SSH terminal and use the password from the last level 
+Step 1) ssh bandit1@bandit.labs.overthewire.org -p 2220
+Connects to ssh of this level
+Step 2) ls and find what files are there on this level 
+Step 3) We find a file named "-" which cannot be opened simply as we cannot simple use vim on that file because "-" is a standard convention for stdin/stdout for a lot of
+programs. We use cat to get the output as when "-" is used with cat it treats it as a synonym for stdin so we use this to get around that so that cat treats it as a normal file-
+
+cat ./-
+Step 4) We get another flag, copy this flag for the next level

@@ -1,0 +1,3 @@
+Level 0 teaches us how to connect to a SSH server, here the SSH server of OverTheWire server specifically -
+
+ssh bandit0@bandit.labs.overthewire.org -p 2220

@@ -1,0 +1,6 @@
+We have made a connection with the level 0 of this game, now time to find the file and the flag of this level - 
+
+Step 1) ls
+This reveals the files located in the directory, here we have only one which is called readme. It is a simple .txt file.
+Step 2)vim readme
+This opens up the readme.txt file and reveals the flag. Copy this flag and save as it will be relevant for our next challenge. 
