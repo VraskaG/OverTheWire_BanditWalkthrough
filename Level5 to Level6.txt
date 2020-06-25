@@ -1,0 +1,17 @@
+Use the steps from Level1 to Level2 stages until you establish a connection with SSH terminal of this challenge
+Step 1) ls
+Another directory
+Step 2) cd inhere
+Step 3) ls 
+Here there will be several directories and these directories contain several files and directory inside them. We cannot manually find our fill hence we are going to make use of find
+command
+Step 4) We would have to make changes in our find command here 
+find .
+This means search in the current directory
+find . -type f -size 1033c
+This means to find the file in thsi directory which is a normal file and has size of 1033 bytes
+find . type f -size 1033c ! -executable
+This means to find the file in this directory which is a normal file and has size of 1033 bytes and is also non executable.
+Hence we get our next flag in maybehere07 .file07
+Step 5) cd maybehere07 
+        cat '.file07'

@@ -1,0 +1,12 @@
+Use the steps from Level1 to Level2 stages until you establish a connection with SSH terminal of this challenge
+Step 1) ls
+Another directory
+Step 2) cd inhere
+Step 3) ls -la
+Here ther will be few files and directories(hidden ones)
+Step 4) find / -type f -size -33c -user bandit7 -group bandit6
+This command will search all the directories of the servers and will give out an input which will show a lot of permission denies. If you go through these commands you will find
+a path -
+/var/lib/dpkg/info//bandit7.password
+This is our file which contains our flag
+Step 5) cat /var/lib/dpkg/info//bandit7.password
