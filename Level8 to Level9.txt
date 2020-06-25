@@ -1,0 +1,8 @@
+Use the steps from Level1 to Level2 stages until you establish a connection with SSH terminal of this challenge
+Step 1) ls
+data.txt is shown
+Step 2) cat data.txt gives us a huge number of possible flags as a result. The challenge is that our flag is never repeated.
+When we try uniq -u command, we do not get the answer reason being uniq comapares the lines which are right next to each other and hence we have to sort our flags first
+We use the method of pipeling here
+Step 3) sort data.txt | uniq - u
+What this line does is that it first sorts our flags in data.txt and makes that output as an input for our uniq command and hence we get out flag
