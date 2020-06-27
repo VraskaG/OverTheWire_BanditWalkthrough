@@ -1,0 +1,6 @@
+Use the steps from Level1 to Level2 stages until you establish a connection with SSH terminal of this challenge
+Step 1) ls
+data.txt is shown
+Step 2) cat data.txt gives us a string of encoded values which has no use for us. Given that this is a bas64 value hence we have to decode it
+Step 3) base64 -d data.txt 
+This decodes and gives us the flag

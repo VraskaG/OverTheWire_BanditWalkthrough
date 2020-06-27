@@ -1,0 +1,9 @@
+Use the steps from Level1 to Level2 stages until you establish a connection with SSH terminal of this challenge
+Step 1) ls
+data.txt is shown
+Step 2) cat data.txt gives us giberish values and this result is not relevant to us hence we narrow it down
+Step 3) strings data.txt
+This commands shows all the human readable strings in the file, it here shows a big list of values and by scrolling throung it we might encounter words like "password" , 
+"here is" etc. . The hitn is that our password is somewhere near a series of "=" hence we pipe our strings result into grep to find our flag
+Step 4) strings data.txt | grep "=="
+Here we used "==" because alot of other values had "=" associated with them and the output looked ugly. 
