@@ -1,0 +1,14 @@
+Use the steps from Level1 to Level2 stages until you establish a connection with SSH terminal of this challenge
+Step 1) This is a quit different challenge as we have a highly compressed file. We can find out about which type of file it is to find what sort of compression tech has been
+done on it
+file data.txt
+This command gives us the type of the file which is either .tar, gzip or bzip2
+Step 2) Create another directory mkdir /temp/flag 
+Copy data.txt there - cp data.txt /temp/flag
+Rename the file - mv data.txt data.(here wehatever the file type it is .tar for tar file, .gz for gzip files and .bz for bzip2 files)
+Step 3) Decompress the file using these techniques - 
+tar -xf [FILENAME] for tar files
+gzip -d [FILENAME] for gzip files
+bzip2 -d [FILENAME] for bzip2 files
+And check the file type after the compression
+Step 4) Keep repeating Step 3 until your file type comes out to be an ASCII type which will be your flag

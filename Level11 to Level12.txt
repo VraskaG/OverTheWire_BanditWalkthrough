@@ -1,0 +1,7 @@
+Use the steps from Level1 to Level2 stages until you establish a connection with SSH terminal of this challenge
+Step 1) ls
+data.txt is shown. It is already given that this file is encoded by rotating the letters by 13 positions.
+Step 2) cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+tr is a translate command and here is is usded as this-
+A-Z are converted as N-Z first meaning all A will be N, B will be O...etc. and the rest after the rotation from N-Z will start from from A again hence O will be A, P will 
+be B....etc
