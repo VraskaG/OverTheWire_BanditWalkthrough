@@ -1,0 +1,9 @@
+Use the steps from Level1 to Level2 stages until you establish a connection with SSH terminal of this challenge
+Step 1) ls -al
+This will list out all the files, our target file here is bandi20-do, we see that this file is an executable
+Step 2) ./bandit2-do 
+This gives us the result asking either directly for an id or running ./bandit-do it to check about the ownership of this file
+Step 3) ./bandit-do id 
+This gives us information abou the ownership of the file, our concern here is with euid which is the id of the user here. We get to know that the user is a file called bandit20
+Step 4) ./bandit-co id cat '/etc/bandit_pass/bandit_20'
+This gives us our flag

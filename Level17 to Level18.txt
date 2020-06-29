@@ -1,7 +1,8 @@
 We have to use the private key from the file we saved from our last challenge in this one
 Step 1) ssh bandit17@bandit.labs.overthewire.org -p 2220 -i bandit17.key
+We also have to change the file permisssion of bandit17.key to only readable and we do that using chmod
+Step Extra) chmod 400 bandit17.key
 Step 2) ls
 We get two files and the there is a change in one line which is our flag for the next challenge
 Step 3) diff -u password.old password.new
 We get an output stating the one different line, the line below is our key
-(Both the lines are keys if you pick the other line you would also have to do level 18-19 so stay aware of this)

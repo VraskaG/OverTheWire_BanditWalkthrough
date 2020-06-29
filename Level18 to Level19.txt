@@ -1,0 +1,2 @@
+Put the correct key and you will get a reply as 'Bye Bye' hence our step 1 will be as this 
+Step 1) ssh bandit17@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
