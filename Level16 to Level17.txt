@@ -1,0 +1,6 @@
+Use the steps from Level1 to Level2 stages until you establish a connection with SSH terminal of this challenge
+Step 1) nmap localhost -p 31000-32000
+This searches for all the available open ports between port numbers 31000 to 32000
+Step 2) We see number of ports here. I do not really have a direct way but we can maually try to ssl and paste the password for everyone of them. A proper ssl port will give 
+an output back.
+Step 3) Find the port and it will give us a private key. Save this key in a file , name it as bandit17.key
